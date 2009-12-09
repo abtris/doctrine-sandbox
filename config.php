@@ -55,5 +55,5 @@ spl_autoload_register(array('Doctrine', 'extensionsAutoload'));
 $manager = Doctrine_Manager::getInstance();
 $manager->openConnection(DSN, 'doctrine');
 $manager->setAttribute(Doctrine_Core::ATTR_MODEL_LOADING, Doctrine_Core::MODEL_LOADING_PEAR);
-
+$manager->setCharset('utf8');
 Doctrine_Core::setModelsDirectory('models');
