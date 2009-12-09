@@ -1,0 +1,20 @@
+User:
+  User_1:
+    name: Tomáš Třešňák
+    email: tomas@gmail.com
+    phone: 123456
+    Car: Car_1
+
+  User_2:
+    name: Emily Žežulkový
+    email: emily@doe.com
+    Car: Car_2
+Car:
+  Car_1:
+    brand: Toyota
+  Car_2:
+    brand: Nissan
+  Car_3:
+    brand: Chevy
+  Car_4:
+    brand: Škoda

@@ -1,0 +1,33 @@
+options:
+  type: INNODB
+  collate: utf8_general_ci
+  charset: utf8
+
+User:
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    name: string(300)
+    email: string(300)
+    phone: string(9)
+    car_id: integer
+  relations:
+    Car:
+      local: car_id
+      foreign: id
+
+Car:
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    brand: string(300)
+  relations:
+    Users:
+      class: User
+      foreign: car_id
+      local: id
+      type: many
